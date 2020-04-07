@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BTFramework"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "基于AFNetwork的网络请求示例"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   DESC
+                    基于AFNetwork的网络请求示例,这就是一个测试，没别的，你信不信？
+                    DESC
 
   spec.homepage     = "https://github.com/BruceTian/BTFramework"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/BruceTian/BTFramework.git", :tag => "{spec.version}" }
+  spec.source       = { :git => "https://github.com/BruceTian/BTFramework.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,11 +91,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "BTFramework/**/*.{h,m}"
+  #spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
-
+  #spec.public_header_files = "BTFramework/**/*.h"
+  #spec.ios.vendored_frameworks = 'BTFramework/BTFramework.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -132,6 +133,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "AFNetworking", "~> 3.1.0"
 
 end
