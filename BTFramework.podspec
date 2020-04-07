@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BTFramework"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "基于AFNetwork的网络请求示例"
 
   # This description is used to generate tags and improve search results.
@@ -91,11 +91,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "BTFramework/**/*.{h,m}"
+  spec.source_files  = "BTFramework/BTFramework.framework/Headers/*.{h}"
   #spec.exclude_files = "Classes/Exclude"
 
-  #spec.public_header_files = "BTFramework/**/*.h"
-  #spec.ios.vendored_frameworks = 'BTFramework/BTFramework.framework'
+  #spec.public_header_files = "BTFramework/BTFramework.framework/Headers/*.{h}"
+  spec.ios.vendored_frameworks = 'BTFramework/BTFramework.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
