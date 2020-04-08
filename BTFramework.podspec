@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BTFramework"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "基于AFNetwork的网络请求示例"
 
   # This description is used to generate tags and improve search results.

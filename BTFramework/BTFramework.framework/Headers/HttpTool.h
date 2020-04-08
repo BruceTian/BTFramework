@@ -22,6 +22,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)get:(NSString *)url parameter:(id )parameters success:(void(^)(id responseObject))success faliure:(void(^)(NSError * error))failure;
 
+/**
+ *  post请求
+ *
+ *  @param url        接口url
+ *  @param parameters 参数
+ *  @param success    请求成功的block
+ *  @param failure    请求失败的block
+ */
++ (void)post:(NSString *)url parameter:(id )parameters success:(void(^)(id responseObject))success faliure:(void(^)(NSError * error))failure;
+
 @end
 
 NS_ASSUME_NONNULL_END
